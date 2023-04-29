@@ -14,7 +14,7 @@
 <body>
 
     <!--TITULOS EN HTML-->
-    <h1>Mi nombre es Estefanía &#128125;</h1>
+    <h1 id="elementoH1">Mi nombre es Estefanía &#128125;</h1>
     Esta es mi primera página Web
     y ahora continuamos
     <!--PARRAFOS-->
@@ -147,12 +147,64 @@
             laudantium amet debitis, sunt eligendi magni corporis soluta eveniet aspernatur vel quas dicta tenetur
             maiores.</p>
     </details>
-<br>
-    <!--IMPORTANTE: ENLACES ENTRE PAGINAS EXTERNAS E INTERNAS-->
+
+    <!--LOS LINKS SON IMPORTANTES EN LAS PÁGINAS WEB
+        
+        1- ME CREAN ENLACES EXTERNOS (a otra url, si la url es externa: https://google.es)
+        2- PUEDES CREAR ENLACES INTERNOS EN EL MISMO PROYECTO, POR EJEMPLO: DEL INDEX.HTML ENLAZAR CON CONTACTO.HTML
+        3- PUEDO CREAR ENLACES EN LA MISMA PÁGINA. X EJEMPLO, DEL PIE DE PAGINA, ENLAZAR CON EL HEADER
+        -->
+    <br>
+
+
+    <!--EJEMPLO 1. ENLACES A PÁGINAS EXTERNAS-->
+
     <a href="https://google.es" title="IR A GOOGLE" target="_blank">Voy a ir a la página de GOOGLE</a>
 
+    <br>
+
+    <!--EJEMPLO 2. CREAR ENLACES INTERNOS EN EL MISMO PROYECTO-->
+    <a href="segundo.html" title="Segunda Página" target="_blank">Ir a un enlace del proyecto</a>
+
+    <br>
+
+    <!--EJEMPLO 3. CRER ENLACES EN LA MISMA PÁGINA, UTILIZANDO COMO ATRIBUTO DE LLAMADA EL ID-->
+    <a href="#elementoH1" title="ir al H1">IR AL H1</a>
+
+    <!--ID     elementoH1    encabezadoPaginaPrimera-->
+    <!--Name   elementoH1    encabezadoPaginaPrimera-->
+
+<br>
+    <a href="#">Recargar la página</a> 
+<br>
+    <a href="pruebas/tercero">Tercer html</a>
+<br>
+    <a href="../+Cotas/index">Mis mascotas</a> <!--con ../ subimos un nivel en el directorio o carpeta-->
 <br>
 
+<!--ENLACE A UN ARCHIVO-->
+    <a href="etiquetas-html.pdf" target="_blank">Mostrar todas las etiquetas HTML</a>
+<br>
+
+<a href="img/favicon.png" target="_blank">Mostrar mi favicon</a>
+<br>
+<!--enlaces para enviar Correo electrónico-->
+<a href="mailto:estefesfer@hotmail.com" title="enviar correo">Envia Email</a>
+
+<br>
+
+<!--Enlazar una página a través de una imagen
+La estructura es muy sencilla-->
+
+<a href="segundo.html"><img src="img/favicon.png"></a>
+
+<br>
+
+
+
+
+
+<!--PIE DE PAGINA CON TEXTO TIPO INDICES-->
     <footer>
 
         <Sup>1</Sup><small> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iste reiciendis

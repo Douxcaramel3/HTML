@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas en HTML</title>
+
+    <style>
+        table, th, td {
+            border: 3.5px solid blueviolet;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h2>Clase para crear Tablas</h2>
+    <!--definir la tabla con la etiqueta <table> </table>-->
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>DNI</th>     
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>Gomez</td>
+            <td>06280520V</td>
+        </tr>
+        <tr>
+            <td>Camilo</td>
+            <td>Sexto</td>
+            <td>06258149D</td>
+        </tr>
+        <tr>
+            <td>Silvia</td>
+            <td>García</td>
+            <td>05896341K</td>
+        </tr>
+    <cpation>Tabla Sencilla</cpation>
+    </table>
+
+    <!--TABLA CON DOS ENCABEZADOS-->
+    <h2>Tabla con doble encabezado, uno horizontal y otro vertical</h2>
+    <table>
+        <caption>Listado de Meses y Estaciones</caption>
+        <tr>
+            <th></th>
+            <th>Invierno</th>
+            <th>Primavera</th>
+            <th>Verano</th>
+            <th>Otoño</th>
+        </tr>
+            <th>Primero</th>
+            <td>58</td>
+            <td>87</td>
+            <td>85</td>
+            <td>79</td>
+        <tr>
+            <th>Segundo</th>
+            <td>856</td>
+            <td>487</td>
+            <td>451</td>
+            <td>698</td>
+        <tr>
+            <th>Tercero</th>
+            <td>345</td>
+            <td>587</td>
+            <td>038</td>
+            <td>267</td>
+        </tr>    
+    </table>
+<br> <br>
+    <table>
+        <caption>Tabla con rowspan y colspan</caption> 
+        <caption>Listado de Meses y Estaciones</caption>
+        <tr>
+            <th></th>
+            <th>Invierno</th>
+            <th>Primavera</th>
+            <th>Verano</th>
+            <th>Otoño</th>
+        </tr>
+            <th>Primero</th>
+            <td>58</td>
+            <td rowspan="2">987</td>
+            <td>85</td>
+            <td>79</td>
+        <tr>
+            <th>Segundo</th>
+            <td>856</td>
+            <td>451</td>
+            <td>698</td>
+        <tr>
+            <th>Tercero</th>
+            <td>345</td>
+            <td>587</td>
+            <td colspan="2">038</td>
+        </tr>    
+    </table>
+</body>
+</html>

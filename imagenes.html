@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes en HTML</title>
+    <style>
+        #cachorro1, #cachorro2, #Ojosgato1, .galeria{
+            border: 2px solid black; 
+            width: 500px;
+            opacity: 1;/* su valor está entre 0 y 1. 0 lo oculta y 1 lo resalta */
+            margin : 25px;
+        
+        }
+        
+/*<!--cuando ponemos margin, te lo hace en todos los lados, luego hay especificos para izquierda, derecha, arriba o abajo-->*/
+
+           #bloque1{
+            padding: 10px;
+            border: 2px dotted lightcoral;
+            width: 75%;
+            text-align: center;
+           } 
+           
+
+    </style>
+</head>
+<body>
+    <h1>Imágenes en HTML</h1>
+    <!--Atributos de las imagenes
+    alt: texto identificativo para cuando no se encuentra la imagen y para la accesibilidad
+    width: ancho de la imagen
+    height: alto de la imagen
+    -->
+    <img src="img/black-dog.webp" alt="Perro cachorro negro" id="cachorro1">
+    <img src="img/cat-negro.webp" alt="Gato Negro" id="cachorro2">
+    <div id="bloque1"> 
+        <p>Bloque para separar las imagenes</p>
+        <img src="img/gato-negro.webp" alt="Ojos gato negro" id="Ojosgato1">
+    </div>
+
+    <figure>
+        <figcaption>Gatitos Graciosos</figcaption> 
+        
+
+        <img src="img/black-dog.webp" alt="Perro negro" class="galeria">
+        <img src="img/cat-negro.webp" alt="Gato negro" class="galeria">
+        <img src="img/gato-negro.webp" alt="Gatito negro" class="galeria">
+    </figure>
+
+    
+</body>
+</html>
