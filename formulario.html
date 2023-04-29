@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+<style>
+form{
+    display: block;
+    margin-top: 5%;
+}
+input{
+    padding: 5px 25px;
+    width: 300px;
+}
+
+
+</style>
 </head>
 <body>
     <h1>Formularios</h1>
@@ -14,7 +27,7 @@
     3. id, name ... -> para identificar el formulario
     4. enctype -> para indicar que tipo de archivos se envia desde el formulario. Ejemplo: enctype= "multipart/form-data"
 -->
-    <form action="primer.html" method="get">
+    <form action="primer.html" method="get" enctype="multipart/form-data">
         <!--Entrada de datos
         1. etiqueta <input> : text, number, telephone, email, file, submit, range
         2. label -> etiqueta para indicar el nombre del input que se muestra
@@ -44,6 +57,31 @@
 <br>
 <!-- en ocasiones no utilizamos la etiqueta label sino que indicamos al usuario que estamos solicitando a través del atributo placeholder -->
 <input type="email" placeholder="Indica tu email" id="email" name="email" required>
+<br>
+<!-- insertar un archivo, es importante el atributo accpet
+accept="image/png, image/jpeg" -->
+<label for="archivo">Inserta tu CV</label>
+<input type="file" id="archivo" accept=".pdf, .docx">
+
+<!-- agrupar diferentes etiquetas y mostrarlas en bloque 
+    <fieldset> abre el grupo
+        <legend> indica un pequeño titulo del grupo (no es obligatorio)
+-->
+
+<fieldset>
+    <legend>Datos Académicos</legend>
+    <input type="text" placeholder="Titulacion" id="titulacion" name="titulacion">
+    <label for="fechaT">Fecha Titulación</label>
+    <!-- etiqueta date que muestra un calendario para insertar una fecha -->
+    <input type="date" id="fechaT" name="fechaT">
+    <input type="text" placeholder="Institución" name="institucion" id="institucion">
+
+</fieldset>
+
+
+<br>
+<br>
+<br>
      <input type="submit" value="Enviar formulario">
 
     </form>
