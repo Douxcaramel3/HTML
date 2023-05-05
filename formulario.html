@@ -51,11 +51,13 @@ input{
     En programación de lenguajes se llaman EXPRESIONES REGULARES. TYPE: TEL se refiere a que cuando coges una tablet o un teléfono directamente te aparece el teclado numérico-->
    <br>
     <label for="sueldo">Sueldo esperado:</label>
+    <br>
     <input type="number" min="1080" max="2000" id="sueldo" name="Sueldo" autocomplete>
  
     <input type="range" min="500" max="2000" id="sueldo" name="sueldo" autocomplete="on">
 <br>
 <!-- en ocasiones no utilizamos la etiqueta label sino que indicamos al usuario que estamos solicitando a través del atributo placeholder -->
+<br>
 <input type="email" placeholder="Indica tu email" id="email" name="email" required>
 <br>
 <!-- insertar un archivo, es importante el atributo accpet
@@ -76,6 +78,106 @@ accept="image/png, image/jpeg" -->
     <input type="date" id="fechaT" name="fechaT">
     <input type="text" placeholder="Institución" name="institucion" id="institucion">
 
+    <!--práctica no recomendada-->
+    <p>Nivel de conocimiento</p>
+    <input type="text" disabled>
+    <!--el atibuto disabled desactiva el campo y por lo tanto, los visitantes no lo prodrán rellenar-->
+    <input type="text" value="17:03h" readonly>
+    <!--El atributo readonly indica que el campo es sólo de lectura-->
+<br>
+     <input type="text" value="5000" hidden>
+    <!-- El atributo hidden oculta el campo de entrada-->
+<br>
+    <label for="mensaje">Mensaje: </label>
+    <textarea name="mensaje" id="mensaje" cols="90" rows="10"></textarea>
+    <!-- textarea crear mensajes, comentarios o textos extensos -->
+<br>
+<br>
+    <!--elementos de grupo RadioBotton-->
+    <label> Seleccione el nivel de Inglés</label>
+<br>
+    Básico <input type="radio" name="nivelIngles" value="basico" checked>
+    <!-- el atributo checked se refiere a que esa casilla va a estar siempre seleccionada por defecto, por ser un requisito mínimo-->
+    Intermedio <input type="radio" name="nivelIngles" value="intermedio">
+    Avanzado <input type="radio" name="nivelIngles" value="avanzado">
+    <!--name siempre tiene que tener el mismo nombre para que no deje seleccionar varios-->
+    
+<br>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Datos de inicio de Sesión</legend>
+    <label for="username">Nombre de usuario:</label>
+    <input type="text" name="username" id="username">
+    <!-- tipo de input, type password para ocultar las contraseñas -->
+    <label for="password">Indica tu contraseña:</label>
+    <input type="password" id="password" name="password" maxlength="10" minlength="8">
+    <label for="password">Repite tu contraseña:</label>
+    <input type="password" id="password" name="password" maxlength="10" minlength="8">
+<br>
+<br>
+    <label for="horario">Horario de Conexión:</label>
+    <!-- <select> etiqueta que nos permite crear una lista desplegable o multiples opciones unida con una etiqueta por opción <option>
+    Atributos del option:
+    value: valor que se envia con el formulario, no es obligatorio
+    selected: que está preseleccionado
+    -->
+    <select name="horario" id="horario">
+        <option></option>
+        <option value="vespertino">Mañana</option>
+        <option value="mediodia">Mediodía</option>
+        <option value="tarde">Tarde</option>
+        <option value="noche">Noche</option>
+    </select>
+    <!-- Cuando se necesita poder seleccionar varias opciones, se debe indicar al select la opcion multiple. Su presencia indica que el usuario puede seleccionar varios valores -->
+    <label for="dispositivo">Dispositivo de Conexión:</label>
+    <select name="dispositivo" id="dispositivo" multiple>
+        <option value="movil" selected>Smartphone</option>
+        <option value="tablet">Tablet</option>
+        <option value="pc">Ordenador</option>
+        <option value="Smartv">Smart TV</option>
+    </select>
+    <!--las casillas de selección múltiple. En las interfaces de las aplicaciones y en los formularios, las casillas de selección se utilizan para tenenr una selección múltiple. De nuevo, es necesario utilizar el elemento <input> con type="checkbox"-->
+        <br>
+        <p>Jornada Seleccionada</p>
+    <label for="morning">Mañana</label>
+    <input type="checkbox" id="morning" name="morning" value="morning">
+    <label for="tarde">Tarde</label>
+    <input type="checkbox" id="tarde" name="tarde" value="tarde">
+    <label for="noche">Indiferente</label>
+    <input type="checkbox" id="indiferente" name="indiferente" value="indiferente">
+    <label for="teletrabajo">Teletrabajo</label>
+    <input type="checkbox" id="teletrabajo" name="teletrabajo" value="teletrabajo">
+
+<br>
+<br>
+<!-- Para seleccionar colores, podemos utilizar un input type="color" -->
+    <label for="colorpreferido">Color Preferido</label>
+    <input type="color" name="colorpreferido" id="colorpreferido" value="#831B67">
+<br>
+<br>
+<!-- input para entradas de URL -->
+    <label for="tuWeb">Página Web Personal</label>
+    <input type="url" name="tuWeb" id="tuWeb">
+<br>
+<br>
+    <label for="mes">Selecciona mes:</label>
+    <input type="month" id="mes" name="mes">
+<br>
+<br>
+<!-- etiquetas de mes, semana, horas, dia-mes, año... -->
+    <p><h3>Etiquetas de tiempo</h3></p>
+    <label for="hora">Hora de Comida</label>
+    <input type="time" id="hora" name="hora">
+    <label for="fechayhora">Fecha y hora</label>
+    <input type="datetime-local" id="fechayhora" name="fechayhora">
+    <label for="semana">Semana</label>
+    <input type="week" id="semana" name="semana">
+<br>
+<br>
+
+
+    
 </fieldset>
 
 
@@ -83,6 +185,9 @@ accept="image/png, image/jpeg" -->
 <br>
 <br>
      <input type="submit" value="Enviar formulario">
+     <input type="reset" value="limpiar formulario">
+
+<br>
 
     </form>
 </body>
