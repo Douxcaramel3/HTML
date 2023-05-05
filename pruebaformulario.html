@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO DE SUSCRIPCIÓN</title>
+</head>
+<body>
+    <h1>Formulario de suscripción</h1>
+
+    <form action="primer.html" method="get" enctype="multipart/form-data">
+
+<fieldset>
+    <legend>Datos para el Regristro</legend>
+    <p><label for="tunombre@dominio.com">Correo electrónico: * </label>
+    <input type="email" placeholder="tunombre@dominio.com" id="tunombre@dominio.com" name="tunombre@dominio.com" required></p>
+
+    <p><label for="contraseña">Contraseña: *</label>
+    <input type="password" id="contraseña" name="contraseña" placeholder="crea una contraseña" minlength="8" maxlength="12" required></p>
+</fieldset>
+<fieldset>
+    <legend>Datos personales</legend>
+    <label for="nombre">Nombre: * </label>
+    <input type="text" placeholder="Tu nombre" id="name" name="nombre" minlength="3" maxlength="20" required pattern="[a-zA-ZáéíóúÁÉÍÓÚÑñçÇ ]+" autocomplete>
+
+    <p><label for="apellidos">Apellidos: *</label>
+    <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" minlength="3" maxlength="20" required pattern="[a-zA-ZáéíóúÁÉÍÓÚÑñçÇ ]+" autocomplete></p>
+
+    <p><label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" placeholder="+34 999999999" required pattern="[+34 6789]{1}[0-9]{8}" autocomplete></p>
+
+    <p>
+    Mujer: <input type="radio" name="mujer" value="mujer">
+    Hombre: <input type="radio" name="hombre" value="hombre">
+    </p>
+    <p>
+    <label for="edad">Edad</label>
+    <input type="number" id="edad" name="edad" maxlength="2">
+    </p>
+
+    <p>
+        <label for="buscar">Buscar</label>
+        <input type="search" id="buscar" name="buscar" placeholder="Ej: Portátil">
+    </p>
+
+    <p>
+        <label for="fechaNacimiento">Fecha de Nacimiento</label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+    </p>
+
+    <p>
+        <label for="fechayhora">Fecha y hora de nacimiento de tu padre</label>
+        <input type="datetime-local" id="fechayhora" name="fechayhora">
+    </p>
+    <p>
+        <label for="mesviaje">¿En que mes te gustaría viajar?</label>
+        <input type="month" id="mesviaje" name="mesviaje">
+    </p>
+    <p>
+        <label for="semanaviaje">¿En que semana te gustaría viajar?</label>
+        <input type="week" id="semanaviaje" name="semanaviaje">
+    </p>
+    <p>
+        <label for="hora">¿A que hora te puedo llamar?</label>
+        <input type="time" id="hora" name="hora">
+    </p>
+    <p>
+        <label for="archivo">Envia tu foto: (.jpg)</label>
+        <input type="file" id="archivo" accept=".jpg">
+    </p>
+</fieldset>
+
+<fieldset>
+    <legend> Sobre tus Redes Sociales </legend>
+    <p>¿Cual utilizas?</p>
+    <label for="facebook">Facebook</label>
+    <input type="checkbox" id="facebook" name="facebook" value="facebook">
+    <label for="twitter">Twitter</label>
+    <input type="checkbox" id="twitter" name="twitter" value="twitter">
+    <label for="linkedin">Linkedin</label>
+    <input type="checkbox" id="linkedin" name="linkedin" value="linkedin">
+    <label for="Instagram">Instagram</label>
+    <input type="checkbox" id="Instagram" name="Instagram" value="Instagram">
+    <label for="whatsapp">WhastApp</label>
+    <input type="checkbox" id="whatsapp" name="whatsapp" value="whatsapp">
+    <label for="snapchat">Snapchat</label>
+    <input type="checkbox" id="snapchat" name="snapchat" value="snapchat">
+    <label for="pinterest">Pinterest</label>
+    <input type="checkbox" id="pinterest" name="pinterest" value="pinterest">
+<p>
+    <label for="tiempoaprox">Tiempo aproximado que las utilizas:</label>
+   1 hora <input type="range" min="1" max="24" id="tiempoaprox" name="tiempoaprox"> 24 horas
+</p>
+<p>
+    <label for="web">¿Tienes página Web o blog?</label>
+    <input type="url" id="web" name="web">
+</p>
+</fieldset>
+<p>
+    Los datos señalados con * son obligatorios para el registro
+</p>
+<p>
+    <input type="submit" value="Enviar formulario">
+    <input type="reset" value="limpiar formulario">
+</p>
+</body>
+</html>
