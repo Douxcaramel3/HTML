@@ -14,10 +14,10 @@
 <fieldset>
     <legend>Datos para el Regristro</legend>
     <p><label for="tunombre@dominio.com">Correo electrónico: * </label>
-    <input type="email" placeholder="tunombre@dominio.com" id="tunombre@dominio.com" name="tunombre@dominio.com" required></p>
+    <input type="email" placeholder="tunombre@dominio.com" id="tunombre@dominio.com" name="tunombre@dominio.com" required autofocus autocomplete="on"></p>
 
     <p><label for="contraseña">Contraseña: *</label>
-    <input type="password" id="contraseña" name="contraseña" placeholder="crea una contraseña" minlength="8" maxlength="12" required></p>
+    <input type="password" id="contraseña" name="contraseña" placeholder="crea una contraseña" minlength="8" maxlength="12" required autocomplete="on"></p>
 </fieldset>
 <fieldset>
     <legend>Datos personales</legend>
@@ -28,11 +28,11 @@
     <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" minlength="3" maxlength="20" required pattern="[a-zA-ZáéíóúÁÉÍÓÚÑñçÇ ]+" autocomplete></p>
 
     <p><label for="telefono">Teléfono:</label>
-    <input type="tel" id="telefono" name="telefono" placeholder="+34 999999999" required pattern="[+34 6789]{1}[0-9]{8}" autocomplete></p>
+    <input type="tel" id="telefono" name="telefono" placeholder="699999999" required pattern="[6789]{1}[0-9]{8}" autocomplete></p>
 
     <p>
-    Mujer: <input type="radio" name="mujer" value="mujer">
-    Hombre: <input type="radio" name="hombre" value="hombre">
+    Mujer: <input type="radio" name="sexo" value="mujer">
+    Hombre: <input type="radio" name="sexo" value="hombre">
     </p>
     <p>
     <label for="edad">Edad</label>
