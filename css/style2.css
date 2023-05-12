@@ -1,0 +1,57 @@
+*{
+    font-family:'Courier New', Courier, monospace
+}
+
+body {
+    padding: 10px;
+    background-color: rgba(227, 241, 241, 0.4);
+    background-image: url("../img/cat-eyes.jpg");
+    background-repeat:no-repeat; 
+    background-position: center top;
+    background-size: cover;
+}
+.izquierda{
+    text-align: left;    
+    color: blue;
+}
+.my-header{
+    color: rgb(255, 253, 127);
+}
+.texto-centrado{
+    text-align: center;
+    color: rgb(179, 166, 51);
+
+}
+.bloque-centrado{
+    width: 75%;
+    /*para centrar un bloque de forma horizontalmente*/
+    margin: auto;
+    /*borde tiene tres o más propiedades: el grosor del borde, la forma, el color...*/
+    border: 6px ridge rgb(235, 143, 23);
+    /*hacer que las esquinas estén redondeadas*/
+    border-radius: 25px 0px 25px 0px; 
+    
+}
+.parrafo-borde-izq{
+    border-left: 8px solid rgb(228, 197, 112);
+    color: rgb(255, 246, 127);
+    width: 75%;
+    margin: auto;
+}
+.bloque-centrado-sborde{
+    width: 75%
+    margin: auto
+}
+.bloque-opaco{
+    background-color: rgba(226, 215, 55, 0.678);
+    text-align:center;
+}
+.bloque{
+    width: 250px;
+    height: 250px;
+    background-image: url(../img/gato-negro.webp);
+    background-size: cover;
+    border: 2px solid rgb(214, 109, 10);
+    margin: auto;
+    opacity: 0.85;
+}

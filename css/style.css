@@ -1,0 +1,9 @@
+/*los comentarios en css se hacen así*/
+*{
+    font-family: Impact, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.centrado{
+    text-align: left;
+    color: blueviolet;
+}
