@@ -1,0 +1,91 @@
+.contenedor{
+    width: 60%;
+    margin: auto;
+}
+.tituloP{
+    color: blueviolet;
+    background-color: aqua;
+    text-align: center;
+    padding: 8px 0px;
+}
+/*justifica el párrafo, pero la última línea está alineada a la derecha*/
+.parrafo1{
+    text-align: justify;
+    text-align-last: right;
+}
+/*escribe de derecha a izquierda*/
+.loca{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+/*alineación vertical*/
+.img1{
+    vertical-align: baseline;/*normal*/
+    width: 10px;
+}
+.img2{
+    vertical-align: text-top; /*arriba del texto*/
+    width: 10px;
+}
+.img3{
+    vertical-align: text-bottom; /*delante del texto*/
+    width: 10px; 
+}
+.img4{
+    vertical-align: sub;
+}
+.img5{
+    vertical-align: super;
+}
+/*la decoración del texto la hacemos con text decoration*/
+.p1{
+    text-decoration: overline; /*linea arriba*/
+    text-decoration-color: rgb(3, 133, 72);
+    text-decoration-style: dotted;
+    text-decoration-thickness: 10px;
+
+}
+.p2{
+    text-decoration: line-through red solid 2px;/*linea en medio*/
+    
+}
+.p3{
+    text-decoration: underline greenyellow; /*linea abajo*/
+    text-decoration-thickness: 2px;
+    text-decoration-style: wavy;
+}
+.p4{
+    text-decoration: overline underline blueviolet wavy 3px; /*linea arriba y abajo*/
+}
+
+/*eliminar la decoración implicita que tienen los enlaces*/
+.enlace1{
+    text-decoration: none;
+    padding: 8px;
+    border: 1px solid palevioletred;
+    margin: 10px 10px;
+    color: pink;
+}
+/*transformación del texto y espaciado del texto*/ /*sombra del texto*/
+.t1{
+    text-transform: uppercase; /*mayuscula*/
+    text-indent: 50px; /*crea tabulación*/
+    text-shadow: 3px 3px blueviolet;
+}
+.t2{
+    text-transform: lowercase;/*minúscula*/
+    letter-spacing: 5px; /*espacion entre letras*/
+    text-shadow: 3px 3px 8px pink;
+}
+.t3{
+    text-transform: capitalize; /*la primera may y resto minús*/
+    line-height: 5; /*altura de la linea, en medidas que van de 0-x sin unidad*/
+    text-shadow: 4px 4px 7px white, 0 0 25px purple, 0 0 5px darkcyan;
+    color: white;
+
+}
+.t4{
+    font-variant: small-caps; /*versalitas*/
+    word-spacing: 15px; /*espaciado entre palabras*/
+    text-shadow:  1px 1px 2px white, 0 0 25px blue, 0 0 5px darkblue;
+}
