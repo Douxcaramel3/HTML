@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(219, 172, 211);
+}
+.parrafo1{
+border-left: 8px solid rgb(224, 6, 206);
+color: rgb(155, 48, 128);
+width: 75%;
+margin: auto;
+border-bottom: 35px;
+}

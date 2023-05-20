@@ -46,8 +46,8 @@ a:hover{
     color: white;
     text-decoration: underline wavy white;
     letter-spacing: 5px;
-   /* padding: para insertar menos parte negra */
 }
+
 .menuP{
     background-color: lightgrey;
 }
