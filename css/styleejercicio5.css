@@ -1,10 +1,26 @@
 body{
     background-color: rgb(219, 172, 211);
 }
+
+.ejercicio5{
+    color: rgb(84, 47, 119);
+    text-align: center;
+}
 .parrafo1{
 border-left: 8px solid rgb(224, 6, 206);
 color: rgb(155, 48, 128);
 width: 75%;
 margin: auto;
 border-bottom: 35px;
+}
+
+.nombre{
+    color: rgb(110, 3, 110);
+    border-color: black;
+}
+
+.gatonegro{
+    background-position: 50%
+    background-size: 100%
+
 }
