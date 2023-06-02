@@ -1,0 +1,184 @@
+body{
+    background: pink url(../img/descansando.jpg) no-repeat fixed center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+    text-transform: uppercase;
+}
+.izquierda, .derecha{
+    width: 350px;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin: 0 30px;
+    margin-bottom: 50px;
+}
+
+.izquierda{
+    float: left;
+    clear: both;
+}
+
+.derecha{
+    float: right;
+}
+
+.s3{
+    width: 95%;
+    background-color: white;
+    clear: both;
+    margin: auto;
+    padding: 10px 0 8px 10px;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    margin: 45px;
+    background-color: plum;
+    float: left;
+    margin-bottom: 50px;
+}
+
+#caja1{
+    background-image: linear-gradient(rgba (255, 0, 0, 0. 857), rgb (249, 8, 121));
+    border: 1px solid white;
+}
+
+#caja2{
+    background-image: linear-gradient(to right, blue, lightblue)
+}
+
+#caja3{
+    background-image: linear-gradient(to bottom right, white, lightgreen);
+}
+
+#caja4{
+    background-image: linear-gradient( blue, lightblue);
+}
+
+#caja5{
+    background-image: radial-gradient(purple, rgb(213, 101, 213));
+    border-radius: 40px;
+}
+
+#caja6{
+    background-image: linear-gradient(yellow, orange, pink, red);
+}
+
+#caja7{
+    background-image: linear-gradient(green, lightgreen);
+    margin-bottom: 100px;
+}
+
+h4{
+    text-align: center;
+    color: orangered;
+    text-decoration: underline 2px solid red;
+}
+
+.contenedor{
+    width: 40%;
+    margin: auto;
+    border: 4px dotted black;
+}
+
+ul, ol{
+    border: 1px solid orange;
+    background-color: pink;
+    width: 25%;
+    margin: 25px auto;
+    padding: 30px;
+}
+
+.lista1 li:nth-child(2){
+    background-color: blue;
+    color: lightseagreen;
+}
+
+.lista2 li:last-child{
+    background-color: gold;
+    list-style: square;
+    color: indianred;
+    list-style: inside;
+}
+
+.lista3{
+    background-color: lightsalmon;
+    color: white;
+    list-style: url(../img/gato-negro.jpg);
+}
+
+.lista3 li:first-child{
+    list-style: inside url(../img/gato-negro.jpg);
+}
+
+.tabla, .tabla2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-collapse: collapse; /*para que se unan con una sola línea*/
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.tabla tb, .tabla th{
+    border: 3px solid red;
+    padding: 8px;
+}
+
+.tabla th{
+    background-color: lightskyblue;
+    text-align: center;
+    padding: 10px 0;
+    color: aqua;
+}
+
+/*par: even, impar: odd*/
+
+.tabla tr:nth-child(even){
+    background-color: aliceblue;
+}
+
+.tabla tr:nth-child(odd){
+    background-color: yellow;
+}
+
+.tabla tr:hover{
+    background-color: lightslategray;
+}
+
+.tabla2 tr{
+    border-bottom: 2px solid hotpink;
+    padding: 15px 0;
+    background-color: bisque;
+}
+
+.tabla2 tr:hover{
+    background-color: honeydew;
+}
+
+.tabla3{
+    border: solid 2px sandybrown;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px skyblue;
+    border-spacing: 0;
+    width: 70%;
+    margin: auto;
+}
+
+.tabla3 td{
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid;
+}
+
+.tabla3 tr:last-child{
+    border: none;
+}
